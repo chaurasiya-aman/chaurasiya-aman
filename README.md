@@ -1,7 +1,7 @@
 <!-- header svg -->
 <p align="center">
   <img
-    src="./header.svg"
+    src="https://raw.githubusercontent.com/chaurasiya-aman/chaurasiya-aman/main/header.svg"
     width="100%"
     alt="Aman Chaurasiya - Software Engineer"
   />
