@@ -9,7 +9,7 @@
 <!-- About me-->
 <p align="center">
   <img
-    src="./about.svg"
+    src="./aboutMe.svg"
     width="100%"
     alt="About Aman Chaurasiya"
   />
