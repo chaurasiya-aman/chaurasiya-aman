@@ -1,791 +1,227 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420">
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="100%" height="100%">
   <defs>
+    <!-- Orbit Paths: 3 planes for 3D illusion -->
+    <!-- Orbit 1: horizontal ring -->
+    <path id="o1" d="M 290,210 A 165,58 0 0,1 615,210 A 165,58 0 0,1 290,210"/>
+    <!-- Orbit 2: 60° tilted ring -->
+    <path id="o2" d="M 532,349 A 165,58 60 0,1 368,71 A 165,58 60 0,1 532,349"/>
+    <!-- Orbit 3: -60° tilted ring -->
+    <path id="o3" d="M 532,71 A 165,58 -60 0,1 368,349 A 165,58 -60 0,1 532,71"/>
 
-    <!-- =========================
-         ORBIT PATHS
-    ========================== -->
-
-    <path
-      id="orbit1"
-      d="M285 210 A165 58 0 1 0 615 210 A165 58 0 1 0 285 210"
-    />
-
-    <path
-      id="orbit2"
-      d="M532 349 A165 58 60 1 0 368 71 A165 58 60 1 0 532 349"
-    />
-
-    <path
-      id="orbit3"
-      d="M532 71 A165 58 -60 1 0 368 349 A165 58 -60 1 0 532 71"
-    />
-
-    <!-- =========================
-         BACKGROUND
-    ========================== -->
-
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#080d16"/>
-      <stop offset="50%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#080d16"/>
-    </linearGradient>
-
-    <!-- =========================
-         SPHERE
-    ========================== -->
-
-    <radialGradient
-      id="sphere"
-      cx="35%"
-      cy="28%"
-      r="70%"
-    >
-      <stop offset="0%" stop-color="#d5ffff"/>
-      <stop offset="20%" stop-color="#7de7ff"/>
-      <stop offset="48%" stop-color="#3297e8"/>
-      <stop offset="75%" stop-color="#174b91"/>
-      <stop offset="100%" stop-color="#07162e"/>
+    <!-- Sphere gradient -->
+    <radialGradient id="sphere-grad" cx="38%" cy="32%" r="65%">
+      <stop offset="0%"   stop-color="#c0caf5"/>
+      <stop offset="28%"  stop-color="#7aa2f7"/>
+      <stop offset="60%"  stop-color="#3d59a1"/>
+      <stop offset="100%" stop-color="#1a1b26"/>
     </radialGradient>
 
-    <!-- =========================
-         HALO
-    ========================== -->
-
-    <radialGradient id="halo">
-      <stop offset="0%" stop-color="#2bdcff" stop-opacity=".30"/>
-      <stop offset="45%" stop-color="#2bdcff" stop-opacity=".12"/>
-      <stop offset="100%" stop-color="#2bdcff" stop-opacity="0"/>
+    <!-- Halo ambient glow -->
+    <radialGradient id="halo-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#7aa2f7" stop-opacity="0.28"/>
+      <stop offset="60%"  stop-color="#7aa2f7" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#7aa2f7" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- =========================
-         FILTERS
-    ========================== -->
-
-    <filter
-      id="glow"
-      x="-100%"
-      y="-100%"
-      width="300%"
-      height="300%"
-    >
-      <feGaussianBlur
-        in="SourceGraphic"
-        stdDeviation="3"
-        result="blur"
-      />
-
+    <!-- Glow filter for icons -->
+    <filter id="icon-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <filter
-      id="softGlow"
-      x="-100%"
-      y="-100%"
-      width="300%"
-      height="300%"
-    >
-      <feGaussianBlur stdDeviation="22"/>
+    <!-- Blur for background halo -->
+    <filter id="halo-blur" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="30"/>
     </filter>
 
-    <!-- =========================
-         CLIP SPHERE
-    ========================== -->
+    <!-- Glow for sphere -->
+    <filter id="sphere-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-    <clipPath id="sphereClip">
-      <circle cx="450" cy="210" r="82"/>
-    </clipPath>
-
+    <style>
+      @keyframes sphere-breathe {
+        0%, 100% { opacity: 0.88; }
+        50%       { opacity: 1.0;  }
+      }
+      @keyframes halo-pulse {
+        0%, 100% { opacity: 0.45; }
+        50%       { opacity: 0.95; }
+      }
+      @keyframes ring-spin {
+        from { transform: rotate(0deg);   }
+        to   { transform: rotate(360deg); }
+      }
+      @keyframes ring-spin-rev {
+        from { transform: rotate(0deg);    }
+        to   { transform: rotate(-360deg); }
+      }
+      .sphere-core   { animation: sphere-breathe 4s ease-in-out infinite; }
+      .halo-circle   { animation: halo-pulse 4s ease-in-out infinite; }
+      .ring1 {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: ring-spin 25s linear infinite;
+      }
+      .ring2 {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: ring-spin-rev 18s linear infinite;
+      }
+    </style>
   </defs>
 
+  <!-- Background -->
+  <rect width="900" height="420" fill="#0d1117" rx="14"/>
 
-  <!-- =========================================================
-       BACKGROUND
-  ========================================================== -->
+  <!-- Ambient halo -->
+  <circle cx="450" cy="210" r="210" fill="url(#halo-grad)" class="halo-circle" filter="url(#halo-blur)"/>
 
-  <rect
-    width="900"
-    height="420"
-    rx="14"
-    fill="url(#background)"
-  />
-
-  <!-- subtle grid -->
-
-  <g
-    stroke="#39dfff"
-    stroke-width=".6"
-    opacity=".08"
-  >
-
-    <path d="M0 70H900"/>
-    <path d="M0 140H900"/>
-    <path d="M0 210H900"/>
-    <path d="M0 280H900"/>
-    <path d="M0 350H900"/>
-
-    <path d="M90 0V420"/>
-    <path d="M180 0V420"/>
-    <path d="M270 0V420"/>
-    <path d="M360 0V420"/>
-    <path d="M450 0V420"/>
-    <path d="M540 0V420"/>
-    <path d="M630 0V420"/>
-    <path d="M720 0V420"/>
-    <path d="M810 0V420"/>
-
+  <!-- Decorative spinning accent rings -->
+  <g transform="translate(450,210)">
+    <ellipse class="ring1" rx="100" ry="100" fill="none" stroke="#7aa2f7" stroke-width="0.8" stroke-opacity="0.2" stroke-dasharray="12,28,4,28"/>
+    <ellipse class="ring2" rx="115" ry="115" fill="none" stroke="#bb9af7" stroke-width="0.8" stroke-opacity="0.15" stroke-dasharray="8,22,3,22"/>
   </g>
 
+  <!-- Orbit path rings -->
+  <ellipse cx="450" cy="210" rx="165" ry="58" fill="none" stroke="#7aa2f7" stroke-opacity="0.18" stroke-width="1.2" stroke-dasharray="5,6"/>
+  <ellipse cx="450" cy="210" rx="165" ry="58" fill="none" stroke="#bb9af7" stroke-opacity="0.18" stroke-width="1.2" stroke-dasharray="5,6" transform="rotate(60 450 210)"/>
+  <ellipse cx="450" cy="210" rx="165" ry="58" fill="none" stroke="#9ece6a" stroke-opacity="0.18" stroke-width="1.2" stroke-dasharray="5,6" transform="rotate(-60 450 210)"/>
 
-  <!-- =========================================================
-       AMBIENT HALO
-  ========================================================== -->
+  <!-- Central Sphere -->
+  <circle cx="450" cy="210" r="82" fill="url(#sphere-grad)" class="sphere-core" filter="url(#sphere-glow)"/>
+  <ellipse cx="427" cy="183" rx="24" ry="16" fill="white" opacity="0.24"/>
+  <circle cx="450" cy="210" r="78" fill="none" stroke="#7aa2f7" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="450" y="206" text-anchor="middle" fill="#c0caf5" font-family="'Courier New',Courier,monospace" font-size="15" font-weight="bold" letter-spacing="3">DEV</text>
+  <text x="450" y="226" text-anchor="middle" fill="#7aa2f7" font-family="'Courier New',Courier,monospace" font-size="9" letter-spacing="2">WEB APPS</text>
 
-  <circle
-    cx="450"
-    cy="210"
-    r="190"
-    fill="url(#halo)"
-    filter="url(#softGlow)"
-  >
-
-    <animate
-      attributeName="opacity"
-      values=".45;.85;.45"
-      dur="4s"
-      repeatCount="indefinite"
-    />
-
-  </circle>
-
-
-  <!-- =========================================================
-       ROTATING DECORATIVE RINGS
-  ========================================================== -->
-
-  <g transform="translate(450 210)">
-
-    <ellipse
-      rx="105"
-      ry="105"
-      fill="none"
-      stroke="#39dfff"
-      stroke-width=".8"
-      stroke-opacity=".20"
-      stroke-dasharray="12 25 4 25"
-    >
-
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        from="0"
-        to="360"
-        dur="24s"
-        repeatCount="indefinite"
-      />
-
-    </ellipse>
-
-
-    <ellipse
-      rx="120"
-      ry="120"
-      fill="none"
-      stroke="#a978ff"
-      stroke-width=".8"
-      stroke-opacity=".15"
-      stroke-dasharray="8 22 3 22"
-    >
-
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        from="360"
-        to="0"
-        dur="18s"
-        repeatCount="indefinite"
-      />
-
-    </ellipse>
-
+  <!-- Orbit 1: Horizontal Ring -->
+  <!-- JAVA -->
+  <g opacity="0.7" filter="url(#icon-glow)">
+    <animateMotion dur="9s" repeatCount="indefinite" rotate="none" begin="0s">
+      <mpath href="#o1"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0.7;0.3;0.7;1;0.7" keyTimes="0;0.25;0.5;0.75;1" dur="9s" repeatCount="indefinite" begin="0s" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+    <circle r="26" fill="#00B4AB" stroke="#5efff8" stroke-width="1.8"/>
+    <text text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="8.5" font-weight="bold">JAVA</text>
   </g>
 
-
-  <!-- =========================================================
-       ORBIT GUIDE LINES
-  ========================================================== -->
-
-  <ellipse
-    cx="450"
-    cy="210"
-    rx="165"
-    ry="58"
-    fill="none"
-    stroke="#39dfff"
-    stroke-opacity=".20"
-    stroke-width="1.2"
-    stroke-dasharray="5 7"
-  />
-
-  <ellipse
-    cx="450"
-    cy="210"
-    rx="165"
-    ry="58"
-    fill="none"
-    stroke="#a978ff"
-    stroke-opacity=".18"
-    stroke-width="1.2"
-    stroke-dasharray="5 7"
-    transform="rotate(60 450 210)"
-  />
-
-  <ellipse
-    cx="450"
-    cy="210"
-    rx="165"
-    ry="58"
-    fill="none"
-    stroke="#52e6ad"
-    stroke-opacity=".18"
-    stroke-width="1.2"
-    stroke-dasharray="5 7"
-    transform="rotate(-60 450 210)"
-  />
-
-
-  <!-- =========================================================
-       CENTRAL SPHERE
-  ========================================================== -->
-
-  <circle
-    cx="450"
-    cy="210"
-    r="86"
-    fill="#2bdcff"
-    opacity=".12"
-    filter="url(#softGlow)"
-  />
-
-  <circle
-    cx="450"
-    cy="210"
-    r="82"
-    fill="url(#sphere)"
-    filter="url(#glow)"
-  >
-
-    <animate
-      attributeName="opacity"
-      values=".88;1;.88"
-      dur="4s"
-      repeatCount="indefinite"
-    />
-
-  </circle>
-
-
-  <!-- sphere highlight -->
-
-  <ellipse
-    cx="426"
-    cy="181"
-    rx="25"
-    ry="17"
-    fill="white"
-    opacity=".18"
-  />
-
-
-  <!-- sphere inner border -->
-
-  <circle
-    cx="450"
-    cy="210"
-    r="78"
-    fill="none"
-    stroke="#78efff"
-    stroke-width="1"
-    stroke-opacity=".42"
-  />
-
-
-  <!-- =========================================================
-       SPHERE INTERNAL DETAILS
-  ========================================================== -->
-
-  <g
-    clip-path="url(#sphereClip)"
-    opacity=".25"
-    stroke="#d7ffff"
-    fill="none"
-    stroke-width=".6"
-  >
-
-    <ellipse
-      cx="450"
-      cy="210"
-      rx="55"
-      ry="82"
-    />
-
-    <ellipse
-      cx="450"
-      cy="210"
-      rx="30"
-      ry="82
-    "/>
-
-    <ellipse
-      cx="450"
-      cy="210"
-      rx="82"
-      ry="28
-    "/>
-
-    <ellipse
-      cx="450"
-      cy="210"
-      rx="82"
-      ry="52
-    "/>
-
+  <!-- NODE.JS -->
+  <g opacity="0.3" filter="url(#icon-glow)">
+    <animateMotion dur="9s" repeatCount="indefinite" rotate="none" begin="-2.25s">
+      <mpath href="#o1"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0.7;0.3;0.7;1;0.7" keyTimes="0;0.25;0.5;0.75;1" dur="9s" repeatCount="indefinite" begin="-2.25s" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+    <circle r="26" fill="#0175C2" stroke="#29b6f6" stroke-width="1.8"/>
+    <text text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="bold">NODE.JS</text>
   </g>
 
-
-  <!-- =========================================================
-       SPHERE TEXT
-  ========================================================== -->
-
-  <text
-    x="450"
-    y="204"
-    text-anchor="middle"
-    fill="#ffffff"
-    font-family="Courier New, monospace"
-    font-size="17"
-    font-weight="bold"
-    letter-spacing="4"
-  >
-    AM
-  </text>
-
-  <text
-    x="450"
-    y="226"
-    text-anchor="middle"
-    fill="#8cf6ff"
-    font-family="Courier New, monospace"
-    font-size="8.5"
-    font-weight="bold"
-    letter-spacing="2"
-  >
-    TECH ENTHUSIAST
-  </text>
-
-
-  <!-- =========================================================
-       ORBIT 1
-       JAVA / REACT.JS / MONGODB / DSA
-  ========================================================== -->
-
-  <g filter="url(#glow)">
-
-    <!-- JAVA -->
-
-    <g>
-
-      <animateMotion
-        dur="9s"
-        repeatCount="indefinite"
-        begin="0s"
-      >
-        <mpath href="#orbit1"/>
-      </animateMotion>
-
-      <circle
-        r="26"
-        fill="#e76f00"
-        stroke="#ffb74d"
-        stroke-width="1.8"
-      />
-
-      <text
-        text-anchor="middle"
-        dominant-baseline="central"
-        fill="white"
-        font-family="Arial, sans-serif"
-        font-size="9"
-        font-weight="bold"
-      >
-        JAVA
-      </text>
-
-    </g>
-
-
-    <!-- REACT -->
-
-    <g>
-
-      <animateMotion
-        dur="9s"
-        repeatCount="indefinite"
-        begin="-2.25s"
-      >
-        <mpath href="#orbit1"/>
-      </animateMotion>
-
-      <circle
-        r="26"
-        fill="#149eca"
-        stroke="#6deaff"
-        stroke-width="1.8"
-      />
-
-      <text
-        text-anchor="middle"
-        dominant-baseline="central"
-        fill="white"
-        font-family="Arial, sans-serif"
-        font-size="8"
-        font-weight="bold"
-      >
-        REACT.JS
-      </text>
-
-    </g>
-
-
-    <!-- MONGODB -->
-
-    <g>
-
-      <animateMotion
-        dur="9s"
-        repeatCount="indefinite"
-        begin="-4.5s"
-      >
-        <mpath href="#orbit1"/>
-      </animateMotion>
-
-      <circle
-        r="26"
-        fill="#1f9d61"
-        stroke="#79ffc1"
-        stroke-width="1.8"
-      />
-
-      <text
-        text-anchor="middle"
-        dominant-baseline="central"
-        fill="white"
-        font-family="Arial, sans-serif"
-        font-size="7.5"
-        font-weight="bold"
-      >
-        MONGODB
-      </text>
-
-    </g>
-
-
-    <!-- DSA -->
-
-    <g>
-
-      <animateMotion
-        dur="9s"
-        repeatCount="indefinite"
-        begin="-6.75s"
-      >
-        <mpath href="#orbit1"/>
-      </animateMotion>
-
-      <circle
-        r="26"
-        fill="#7357d9"
-        stroke="#c7b6ff"
-        stroke-width="1.8"
-      />
-
-      <text
-        text-anchor="middle"
-        dominant-baseline="central"
-        fill="white"
-        font-family="Arial, sans-serif"
-        font-size="9"
-        font-weight="bold"
-      >
-        DSA
-      </text>
-
-    </g>
-
+  <!-- EXPRESS.JS -->
+  <g opacity="0.7" filter="url(#icon-glow)">
+    <animateMotion dur="9s" repeatCount="indefinite" rotate="none" begin="-4.5s">
+      <mpath href="#o1"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0.7;0.3;0.7;1;0.7" keyTimes="0;0.25;0.5;0.75;1" dur="9s" repeatCount="indefinite" begin="-4.5s" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+    <circle r="26" fill="#7F52FF" stroke="#c0a8ff" stroke-width="1.8"/>
+    <text text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="7" font-weight="bold">EXPRESS</text>
   </g>
 
-
-  <!-- =========================================================
-       ORBIT 2
-       JAVASCRIPT / NODE.JS / EXPRESS.JS
-  ========================================================== -->
-
-  <g filter="url(#glow)">
-
-    <!-- JAVASCRIPT -->
-
-    <g>
-
-      <animateMotion
-        dur="12s"
-        repeatCount="indefinite"
-        begin="0s"
-      >
-        <mpath href="#orbit2"/>
-      </animateMotion>
-
-      <circle
-        r="26"
-        fill="#d4ae22"
-        stroke="#fff19a"
-        stroke-width="1.8"
-      />
-
-      <text
-        text-anchor="middle"
-        dominant-baseline="central"
-        fill="#101010"
-        font-family="Arial, sans-serif"
-        font-size="6.7"
-        font-weight="bold"
-      >
-        JAVASCRIPT
-      </text>
-
-    </g>
-
-
-    <!-- NODE -->
-
-    <g>
-
-      <animateMotion
-        dur="12s"
-        repeatCount="indefinite"
-        begin="-4s"
-      >
-        <mpath href="#orbit2"/>
-      </animateMotion>
-
-      <circle
-        r="26"
-        fill="#238b50"
-        stroke="#83ffc1"
-        stroke-width="1.8"
-      />
-
-      <text
-        text-anchor="middle"
-        dominant-baseline="central"
-        fill="white"
-        font-family="Arial, sans-serif"
-        font-size="8"
-        font-weight="bold"
-      >
-        NODE.JS
-      </text>
-
-    </g>
-
-
-    <!-- EXPRESS -->
-
-    <g>
-
-      <animateMotion
-        dur="12s"
-        repeatCount="indefinite"
-        begin="-8s"
-      >
-        <mpath href="#orbit2"/>
-      </animateMotion>
-
-      <circle
-        r="26"
-        fill="#636b75"
-        stroke="#c9d0d8"
-        stroke-width="1.8"
-      />
-
-      <text
-        text-anchor="middle"
-        dominant-baseline="central"
-        fill="white"
-        font-family="Arial, sans-serif"
-        font-size="7"
-        font-weight="bold"
-      >
-        EXPRESS.JS
-      </text>
-
-    </g>
-
+  <!-- Java Duplicate Replacement (DSA) -->
+  <g opacity="1" filter="url(#icon-glow)">
+    <animateMotion dur="9s" repeatCount="indefinite" rotate="none" begin="-6.75s">
+      <mpath href="#o1"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0.7;0.3;0.7;1;0.7" keyTimes="0;0.25;0.5;0.75;1" dur="9s" repeatCount="indefinite" begin="-6.75s" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+    <circle r="26" fill="#E76F00" stroke="#ffb74d" stroke-width="1.8"/>
+    <text text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="8.5" font-weight="bold">DSA</text>
   </g>
 
-
-  <!-- =========================================================
-       ORBIT 3
-       SQL / REST APIs / FULL STACK
-  ========================================================== -->
-
-  <g filter="url(#glow)">
-
-    <!-- SQL -->
-
-    <g>
-
-      <animateMotion
-        dur="15s"
-        repeatCount="indefinite"
-        begin="0s"
-      >
-        <mpath href="#orbit3"/>
-      </animateMotion>
-
-      <circle
-        r="26"
-        fill="#1976bd"
-        stroke="#72caff"
-        stroke-width="1.8"
-      />
-
-      <text
-        text-anchor="middle"
-        dominant-baseline="central"
-        fill="white"
-        font-family="Arial, sans-serif"
-        font-size="9"
-        font-weight="bold"
-      >
-        SQL
-      </text>
-
-    </g>
-
-
-    <!-- REST -->
-
-    <g>
-
-      <animateMotion
-        dur="15s"
-        repeatCount="indefinite"
-        begin="-5s"
-      >
-        <mpath href="#orbit3"/>
-      </animateMotion>
-
-      <circle
-        r="26"
-        fill="#c55c38"
-        stroke="#ffae91"
-        stroke-width="1.8"
-      />
-
-      <text
-        text-anchor="middle"
-        dominant-baseline="central"
-        fill="white"
-        font-family="Arial, sans-serif"
-        font-size="7"
-        font-weight="bold"
-      >
-        REST API
-      </text>
-
-    </g>
-
-
-    <!-- FULL STACK -->
-
-    <g>
-
-      <animateMotion
-        dur="15s"
-        repeatCount="indefinite"
-        begin="-10s"
-      >
-        <mpath href="#orbit3"/>
-      </animateMotion>
-
-      <circle
-        r="26"
-        fill="#168f8b"
-        stroke="#79fff4"
-        stroke-width="1.8"
-      />
-
-      <text
-        text-anchor="middle"
-        dominant-baseline="central"
-        fill="white"
-        font-family="Arial, sans-serif"
-        font-size="6.8"
-        font-weight="bold"
-      >
-        FULL STACK
-      </text>
-
-    </g>
-
+  <!-- Orbit 2: 60° Tilted Ring -->
+  <!-- REACT.JS -->
+  <g opacity="1" filter="url(#icon-glow)">
+    <animateMotion dur="12s" repeatCount="indefinite" rotate="none" begin="0s">
+      <mpath href="#o2"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="1;0.7;0.3;0.7;1" keyTimes="0;0.25;0.5;0.75;1" dur="12s" repeatCount="indefinite" begin="0s" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+    <circle r="26" fill="#3DDC84" stroke="#7fffc4" stroke-width="1.8"/>
+    <text text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="7.8" font-weight="bold">REACT.JS</text>
   </g>
 
-
-  <!-- =========================================================
-       FLOATING PARTICLES
-  ========================================================== -->
-
-  <g fill="#54eaff">
-
-    <circle cx="170" cy="90" r="1.5">
-      <animate
-        attributeName="opacity"
-        values=".2;1;.2"
-        dur="2.2s"
-        repeatCount="indefinite"
-      />
-    </circle>
-
-    <circle cx="735" cy="90" r="1.5">
-      <animate
-        attributeName="opacity"
-        values="1;.2;1"
-        dur="2.7s"
-        repeatCount="indefinite"
-      />
-    </circle>
-
-    <circle cx="760" cy="325" r="1.5">
-      <animate
-        attributeName="opacity"
-        values=".2;1;.2"
-        dur="3s"
-        repeatCount="indefinite"
-      />
-    </circle>
-
-    <circle cx="145" cy="325" r="1.5">
-      <animate
-        attributeName="opacity"
-        values="1;.2;1"
-        dur="2.5s"
-        repeatCount="indefinite"
-      />
-    </circle>
-
+  <!-- MONGO DB -->
+  <g opacity="0.7" filter="url(#icon-glow)">
+    <animateMotion dur="12s" repeatCount="indefinite" rotate="none" begin="-3s">
+      <mpath href="#o2"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="1;0.7;0.3;0.7;1" keyTimes="0;0.25;0.5;0.75;1" dur="12s" repeatCount="indefinite" begin="-3s" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+    <circle r="26" fill="#FFA000" stroke="#ffe082" stroke-width="1.8"/>
+    <text text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="7.5" font-weight="bold">MONGO DB</text>
   </g>
 
+  <!-- SQL -->
+  <g opacity="0.3" filter="url(#icon-glow)">
+    <animateMotion dur="12s" repeatCount="indefinite" rotate="none" begin="-6s">
+      <mpath href="#o2"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="1;0.7;0.3;0.7;1" keyTimes="0;0.25;0.5;0.75;1" dur="12s" repeatCount="indefinite" begin="-6s" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+    <circle r="26" fill="#A259FF" stroke="#d4b2ff" stroke-width="1.8"/>
+    <text text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="8.5" font-weight="bold">SQL</text>
+  </g>
+
+  <!-- Git -->
+  <g opacity="0.7" filter="url(#icon-glow)">
+    <animateMotion dur="12s" repeatCount="indefinite" rotate="none" begin="-9s">
+      <mpath href="#o2"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="1;0.7;0.3;0.7;1" keyTimes="0;0.25;0.5;0.75;1" dur="12s" repeatCount="indefinite" begin="-9s" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+    <circle r="26" fill="#F05032" stroke="#ff9e85" stroke-width="1.8"/>
+    <text text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="8.5" font-weight="bold">Git</text>
+  </g>
+
+  <!-- Orbit 3: -60° Tilted Ring -->
+  <!-- VSCode -->
+  <g opacity="0.3" filter="url(#icon-glow)">
+    <animateMotion dur="15s" repeatCount="indefinite" rotate="none" begin="0s">
+      <mpath href="#o3"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0.3;0.7;1;0.7;0.3" keyTimes="0;0.25;0.5;0.75;1" dur="15s" repeatCount="indefinite" begin="0s" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+    <circle r="26" fill="#007ACC" stroke="#5cc5ff" stroke-width="1.8"/>
+    <text text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="7.5" font-weight="bold">VSCode</text>
+  </g>
+
+  <!-- C++ -->
+  <g opacity="0.7" filter="url(#icon-glow)">
+    <animateMotion dur="15s" repeatCount="indefinite" rotate="none" begin="-3.75s">
+      <mpath href="#o3"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0.3;0.7;1;0.7;0.3" keyTimes="0;0.25;0.5;0.75;1" dur="15s" repeatCount="indefinite" begin="-3.75s" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+    <circle r="26" fill="#3776AB" stroke="#88c0ff" stroke-width="1.8"/>
+    <text text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="8.5" font-weight="bold">C++</text>
+  </g>
+
+  <!-- JAVASCRIPT -->
+  <g opacity="1" filter="url(#icon-glow)">
+    <animateMotion dur="15s" repeatCount="indefinite" rotate="none" begin="-7.5s">
+      <mpath href="#o3"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0.3;0.7;1;0.7;0.3" keyTimes="0;0.25;0.5;0.75;1" dur="15s" repeatCount="indefinite" begin="-7.5s" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+    <circle r="26" fill="#F7DF1E" stroke="#fff176" stroke-width="1.8"/>
+    <text text-anchor="middle" dominant-baseline="central" fill="#1a1a1a" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="bold">JS</text>
+  </g>
+
+  <!-- Postman -->
+  <g opacity="0.7" filter="url(#icon-glow)">
+    <animateMotion dur="15s" repeatCount="indefinite" rotate="none" begin="-11.25s">
+      <mpath href="#o3"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0.3;0.7;1;0.7;0.3" keyTimes="0;0.25;0.5;0.75;1" dur="15s" repeatCount="indefinite" begin="-11.25s" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>
+    <circle r="26" fill="#FF6C37" stroke="#ffa07a" stroke-width="1.8"/>
+    <text text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="7.5" font-weight="bold">Postman</text>
+  </g>
 </svg>
