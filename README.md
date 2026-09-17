@@ -25,3 +25,21 @@
 [![](https://komarev.com/ghpvc/?username=chaurasiya-aman&icon=0&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
+
+## 🐍 My Contributions
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/chaurasiya-aman/chaurasiya-aman/output/github-contribution-grid-snake-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/chaurasiya-aman/chaurasiya-aman/output/github-contribution-grid-snake.svg"
+  />
+  <img
+    alt="GitHub contribution snake"
+    src="https://raw.githubusercontent.com/chaurasiya-aman/chaurasiya-aman/output/github-contribution-grid-snake.svg"
+  />
+</picture>
