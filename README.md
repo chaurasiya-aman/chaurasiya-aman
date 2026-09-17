@@ -6,7 +6,14 @@
     alt="Aman Chaurasiya - Software Engineer"
   />
 </p>
-
+<!-- About me-->
+<p align="center">
+  <img
+    src="./about.svg"
+    width="100%"
+    alt="About Aman Chaurasiya"
+  />
+</p>
 <p align="center">
   <a href="https://linkedin.com/in/er-aman-chaurasiya">
     <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
