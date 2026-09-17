@@ -1,0 +1,173 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="50%" stop-color="#0b1026"/>
+      <stop offset="100%" stop-color="#050816"/>
+    </linearGradient>
+
+    <pattern id="grid" width="45" height="45"
+             patternUnits="userSpaceOnUse">
+      <path d="M45 0H0V45"
+            fill="none"
+            stroke="#26304d"
+            stroke-width="1"
+            opacity="0.35"/>
+    </pattern>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00eaff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00eaff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#00eaff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+
+  <!-- Border -->
+  <rect x="15" y="15"
+        width="1170" height="330"
+        rx="12"
+        fill="none"
+        stroke="#00eaff"
+        stroke-width="1"
+        opacity="0.45"/>
+
+  <!-- Corner brackets -->
+  <g fill="none"
+     stroke="#00eaff"
+     stroke-width="3"
+     filter="url(#glow)">
+    <path d="M40 75V40H75"/>
+    <path d="M1125 40H1160V75"/>
+    <path d="M40 285V320H75"/>
+    <path d="M1125 320H1160V285"/>
+  </g>
+
+  <!-- Scan line -->
+  <rect x="40" y="70"
+        width="1120"
+        height="2"
+        fill="url(#scan)">
+
+    <animate
+      attributeName="y"
+      values="70;290;70"
+      dur="6s"
+      repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Status -->
+  <circle cx="90" cy="92"
+          r="5"
+          fill="#00ff9d"
+          filter="url(#glow)"/>
+
+  <text x="108" y="98"
+        fill="#00ff9d"
+        font-family="monospace"
+        font-size="15"
+        letter-spacing="2">
+    OPEN TO WORK
+  </text>
+
+  <!-- Name -->
+  <text x="600" y="175"
+        text-anchor="middle"
+        fill="#00eaff"
+        font-family="monospace"
+        font-size="62"
+        font-weight="700"
+        opacity="0.45"
+        filter="url(#glow)">
+    Aman Chaurasiya
+  </text>
+
+  <text x="600" y="175"
+        text-anchor="middle"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="62"
+        font-weight="700">
+    Aman Chaurasiya
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="220"
+        text-anchor="middle"
+        fill="#00eaff"
+        font-family="monospace"
+        font-size="19"
+        letter-spacing="3">
+    SOFTWARE ENGINEER • JAVA • FULL STACK
+  </text>
+
+  <!-- Description -->
+  <text x="600" y="260"
+        text-anchor="middle"
+        fill="#9aa7c7"
+        font-family="monospace"
+        font-size="16">
+    &lt; Building Real-World Software, One Problem at a Time /&gt;
+  </text>
+
+  <!-- Footer -->
+  <text x="55" y="315"
+        fill="#64748b"
+        font-family="monospace"
+        font-size="13">
+    v2026 • SOFTWARE_DEV
+  </text>
+
+  <text x="1145" y="315"
+        text-anchor="end"
+        fill="#00eaff"
+        font-family="monospace"
+        font-size="13">
+    java ✓
+  </text>
+
+  <!-- Small particles -->
+  <g fill="#00eaff">
+    <circle cx="180" cy="150" r="2">
+      <animate attributeName="opacity"
+               values="0.2;1;0.2"
+               dur="2.5s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1030" cy="185" r="2">
+      <animate attributeName="opacity"
+               values="1;0.2;1"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="250" cy="275" r="1.5">
+      <animate attributeName="opacity"
+               values="0.2;1;0.2"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="950" cy="120" r="1.5">
+      <animate attributeName="opacity"
+               values="1;0.2;1"
+               dur="2.5s"
+               repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+</svg>
