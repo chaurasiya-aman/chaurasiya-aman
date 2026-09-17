@@ -6,6 +6,7 @@
     alt="Aman Chaurasiya - Software Engineer"
   />
 </p>
+
 <!-- About me-->
 <p align="center">
   <img
@@ -29,6 +30,13 @@
 ---
 
 # 🛠️ Tech Stack
+<p align="center">
+  <img
+    src="./tech-sphere.svg"
+    width="700"
+    alt="Aman Chaurasiya Tech Sphere"
+  />
+</p>
 
 ### Languages
 
