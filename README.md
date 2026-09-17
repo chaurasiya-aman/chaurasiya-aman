@@ -33,7 +33,7 @@
 <p align="center">
   <img
     src="./tech-sphere.svg"
-    width="700"
+    width="100%"
     alt="Aman Chaurasiya Tech Sphere"
   />
 </p>
