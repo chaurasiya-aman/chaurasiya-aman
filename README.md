@@ -28,20 +28,6 @@
 
 ---
 
-# 👨‍💻 About Me
-
-I'm **Aman Chaurasiya**, a **B.Tech Computer Science Engineering student** at Shri Ramswaroop Memorial College of Engineering & Management, graduating in **2027**.
-
-- 💻 Interested in **Software Development and Full-Stack Engineering**
-- ☕ Primary programming language for DSA: **Java**
-- 🧠 Solving **Data Structures & Algorithms** problems regularly
-- 🚀 Building real-world projects using the **MERN stack**
-- 🔧 Interested in **backend development and software engineering**
-- 🌱 Currently strengthening **DSA, backend development, system design, and CS fundamentals**
-- 📚 Continuously learning by building projects and solving problems
-
----
-
 # 🛠️ Tech Stack
 
 ### Languages
