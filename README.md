@@ -79,12 +79,13 @@
 ---
 
 # 🚀 Projects
+
 <p align="center">
   <a href="https://e-commerce-ekart.onrender.com">
     <img
       src="./my-projects/ekart.svg"
       alt="eKart Store"
-      width="900"
+      width="100%"
     />
   </a>
 </p>
@@ -93,7 +94,7 @@
     <img
       src="./my-projects/travelnest.svg"
       alt="travelnest"
-      width="900"
+      width="100%"
     />
   </a>
 </p>
