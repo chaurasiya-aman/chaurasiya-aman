@@ -66,7 +66,7 @@
 
 <table>
 <tr>
-<td width="55%" valign="middle">
+<td width="50%" valign="middle">
 
 ### 🛒 eKart - Full-Stack E-Commerce
 
@@ -74,31 +74,35 @@ A full-stack MERN e-commerce platform with JWT-based authentication, email verif
 
 **Tech:** React · Node.js · Express · MongoDB · JWT · Redux Toolkit · Cloudinary
 
+<br>
+
+<b>Live Demo:</b> <a href="https://e-commerce-ekart.onrender.com">eKart</a>
+
 </td>
 
-<td width="45%" align="center">
-  <a href="https://e-commerce-ekart.onrender.com" target="_blank">
-    <img src="./my-projects/ekart.svg" width="100%" alt="eKart Store" />
+<td width="50%" align="center" valign="middle">
+  <a href="https://e-commerce-ekart.onrender.com">
+    <img
+      src="./my-projects/ekart.svg"
+      width="90%"
+      alt="eKart Store"
+    />
   </a>
- <p>
-  <b>eKart</b> - 
-  <a href="https://e-commerce-ekart.onrender.com">Live Demo</a>
-</p>
 </td>
 </tr>
 
 <tr>
-<td width="45%" align="center">
-  <a href="https://wanderlust-project-ftx2.onrender.com/" target="_blank">
-    <img src="./my-projects/travelnest.svg" width="100%" alt="TravelNest" />
+<td width="50%" align="center" valign="middle">
+  <a href="https://wanderlust-project-ftx2.onrender.com/">
+    <img
+      src="./my-projects/travelnest.svg"
+      width="90%"
+      alt="TravelNest"
+    />
   </a>
- <p>
-  <b>TravelNest</b> - 
-  <a href="https://wanderlust-project-ftx2.onrender.com/">Live Demo</a>
-</p>
 </td>
 
-<td width="55%" valign="middle">
+<td width="50%" valign="middle">
 
 ### 🏡 TravelNest - Travel Listing Platform
 
@@ -106,11 +110,15 @@ A full-stack travel listing platform built with Node.js and Express, featuring u
 
 **Tech:** Node.js · Express · MongoDB · EJS · Passport.js · Cloudinary · Leaflet
 
+<br>
+
+<b>Live Demo:</b> <a href="https://wanderlust-project-ftx2.onrender.com/">TravelNest</a>
+
 </td>
 </tr>
 
 <tr>
-<td width="55%" valign="middle">
+<td width="50%" valign="middle">
 
 ### 🌦️ Weather App
 
@@ -118,16 +126,20 @@ A responsive weather application that retrieves real-time weather information th
 
 **Tech:** HTML · CSS · JavaScript · Weather API
 
+<br>
+
+<b>Live Demo:</b> <a href="https://chaurasiya-aman.github.io/weather-app/">Weather App</a>
+
 </td>
 
-<td width="45%" align="center">
-  <a href="https://chaurasiya-aman.github.io/weather-app/" target="_blank">
-    <img src="./my-projects/weatherApp.svg" width="100%" alt="Weather App" />
+<td width="50%" align="center" valign="middle">
+  <a href="https://chaurasiya-aman.github.io/weather-app/">
+    <img
+      src="./my-projects/weatherApp.svg"
+      width="90%"
+      alt="Weather App"
+    />
   </a>
-  <p>
-  <b>Weather App</b> - 
-  <a href="https://chaurasiya-aman.github.io/weather-app/">Live Demo</a>
-</p>
 </td>
 </tr>
 </table>
