@@ -139,20 +139,6 @@ A full-stack travel/listing application built using Node.js and Express.js.
 
 🔗 **Live:** https://wanderlust-project-ftx2.onrender.com
 
----
-
-## 🤟 SignBridge
-
-A sign-language translation project currently being developed.
-
-**Tech:** React.js • FastAPI • Python • MediaPipe • TensorFlow
-
-The project focuses on capturing hand gestures through the frontend and processing them through a backend translation pipeline.
-
-🚧 **Currently under development**
-
----
-
 ## 🌦️ Weather Application
 
 A web application that retrieves and displays weather information using an external weather API.
