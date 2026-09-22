@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sky-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <style>
+      @keyframes sun-spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes cloud-bob {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-4px); }
+      }
+      .sun { transform-origin: 380px 65px; animation: sun-spin 20s linear infinite; }
+      .cloud { animation: cloud-bob 4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Base Plate -->
+  <rect width="450" height="320" rx="16" fill="url(#sky-bg)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.5"/>
+
+  <!-- Weather Art: Sun & Cloud -->
+  <g class="sun">
+    <circle cx="380" cy="65" r="14" fill="#facc15"/>
+    <!-- Sun Rays -->
+    <path d="M380 43 L380 47 M380 83 L380 87 M358 65 L362 65 M398 65 L402 65 M365 50 L368 53 M392 77 L395 80 M365 80 L368 77 M392 50 L395 53" stroke="#facc15" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="cloud" transform="translate(345, 65)">
+    <path d="M10 20 A12 12 0 0 1 30 14 A18 18 0 0 1 54 18 A12 12 0 0 1 65 28 A8 8 0 0 1 60 38 L12 38 A10 10 0 0 1 10 20 Z" fill="#ffffff" opacity="0.9"/>
+    <!-- Rain Drops -->
+    <line x1="22" y1="42" x2="18" y2="48" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="36" y1="42" x2="32" y2="48" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="50" y1="42" x2="46" y2="48" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="25" y="45" fill="#bae6fd" font-family="'Courier New', monospace" font-size="11" font-weight="bold" letter-spacing="1.5">CLIENT UTILITY</text>
+  <text x="25" y="75" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="800">🌦️ Weather App</text>
+
+  <!-- Tech Badges -->
+  <g transform="translate(25, 92)" font-family="'Courier New', monospace" font-size="9.5">
+    <rect width="46" height="18" rx="4" fill="#082f49" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="23" y="12" fill="#7dd3fc" text-anchor="middle">HTML5</text>
+
+    <rect x="52" width="46" height="18" rx="4" fill="#082f49" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="75" y="12" fill="#7dd3fc" text-anchor="middle">CSS3</text>
+
+    <rect x="104" width="82" height="18" rx="4" fill="#082f49" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="145" y="12" fill="#7dd3fc" text-anchor="middle">JavaScript</text>
+
+    <rect x="192" width="68" height="18" rx="4" fill="#082f49" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="226" y="12" fill="#7dd3fc" text-anchor="middle">REST API</text>
+  </g>
+
+  <!-- Specs -->
+  <g transform="translate(25, 140)" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#e0f2fe">
+    <text x="0" y="0">• Async REST API queries for live global city weather</text>
+    <text x="0" y="24">• Dynamic client-side DOM injection &amp; icon updates</text>
+    <text x="0" y="48">• Responsive design with adaptive weather backgrounds</text>
+    <text x="0" y="72">• Real-time temperature, humidity, and wind metrics</text>
+  </g>
+
+  <!-- Metrics Tag -->
+  <g transform="translate(25, 260)">
+    <rect width="400" height="34" rx="8" fill="#0c4a6e" fill-opacity="0.5" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="18" y="21" fill="#7dd3fc" font-family="'Courier New', monospace" font-size="10.5" font-weight="bold">API INTEGRATION</text>
+    <text x="385" y="21" fill="#ffffff" font-family="'Courier New', monospace" font-size="10" text-anchor="end">Live Forecast Pipeline</text>
+  </g>
+</svg>
