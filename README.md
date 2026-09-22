@@ -79,7 +79,15 @@
 ---
 
 # 🚀 Projects
-
+<p align="center">
+  <a href="https://e-commerce-ekart.onrender.com">
+    <img
+      src="./my-projects/ekart.svg"
+      alt="eKart Store"
+      width="900"
+    />
+  </a>
+</p>
 ## 🛒 eKart — MERN E-Commerce Platform
 
 A full-stack e-commerce project built with the MERN stack.
