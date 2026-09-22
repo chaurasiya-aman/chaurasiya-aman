@@ -147,8 +147,17 @@ A web application that retrieves and displays weather information using an exter
 
 ---
 
-# 🧠 Data Structures & Algorithms
+# 🧠 Technicals
 
+<p align="center">
+  <a href="https://chaurasiya-aman.github.io/weather-app/">
+    <img
+      src="./technicals.svg"
+      alt="DSA"
+      width="100%"
+    />
+  </a>
+</p>
 I'm actively practicing DSA using **Java**.
 
 Currently working with:
