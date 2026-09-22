@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="warm-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="60%" stop-color="#292524"/>
+      <stop offset="100%" stop-color="#1c1917"/>
+    </linearGradient>
+    <style>
+      @keyframes float-pin {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      .pin { animation: float-pin 3s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Base Plate -->
+  <rect width="450" height="320" rx="16" fill="url(#warm-bg)" stroke="#f59e0b" stroke-width="1.2" stroke-opacity="0.5"/>
+
+  <!-- Compass Background Accent -->
+  <circle cx="380" cy="70" r="40" fill="none" stroke="#d97706" stroke-width="0.7" stroke-dasharray="4,6" opacity="0.4"/>
+  <circle cx="380" cy="70" r="28" fill="none" stroke="#f59e0b" stroke-width="0.7" opacity="0.3"/>
+  <path d="M380 35 L384 66 L415 70 L384 74 L380 105 L376 74 L345 70 L376 66 Z" fill="#f59e0b" opacity="0.25"/>
+
+  <!-- Floating Map Pin -->
+  <g class="pin" transform="translate(372, 52)">
+    <path d="M8 0 C3.58 0 0 3.58 0 8 C0 14 8 22 8 22 C8 22 16 14 16 8 C16 3.58 12.42 0 8 0 Z" fill="#ef4444"/>
+    <circle cx="8" cy="8" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="25" y="45" fill="#f59e0b" font-family="'Georgia', serif" font-size="12" letter-spacing="1.5">EXPEDITION &amp; STAYS</text>
+  <text x="25" y="75" fill="#fef3c7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="800">🌍 TravelNest</text>
+
+  <!-- Tech Badges -->
+  <g transform="translate(25, 92)" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600">
+    <rect width="52" height="18" rx="4" fill="#78350f" fill-opacity="0.4" stroke="#d97706" stroke-width="0.8"/>
+    <text x="26" y="12.5" fill="#fde68a" text-anchor="middle">Node.js</text>
+
+    <rect x="58" width="56" height="18" rx="4" fill="#78350f" fill-opacity="0.4" stroke="#d97706" stroke-width="0.8"/>
+    <text x="86" y="12.5" fill="#fde68a" text-anchor="middle">Express</text>
+
+    <rect x="120" width="36" height="18" rx="4" fill="#78350f" fill-opacity="0.4" stroke="#d97706" stroke-width="0.8"/>
+    <text x="138" y="12.5" fill="#fde68a" text-anchor="middle">EJS</text>
+
+    <rect x="162" width="60" height="18" rx="4" fill="#78350f" fill-opacity="0.4" stroke="#d97706" stroke-width="0.8"/>
+    <text x="192" y="12.5" fill="#fde68a" text-anchor="middle">Leaflet</text>
+
+    <rect x="228" width="68" height="18" rx="4" fill="#78350f" fill-opacity="0.4" stroke="#d97706" stroke-width="0.8"/>
+    <text x="262" y="12.5" fill="#fde68a" text-anchor="middle">Passport.js</text>
+  </g>
+
+  <!-- Specs -->
+  <g transform="translate(25, 138)" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#d6d3d1">
+    <text x="0" y="0"><tspan fill="#f59e0b">📍</tspan> Interactive map rendering &amp; geolocation markers</text>
+    <text x="0" y="24"><tspan fill="#f59e0b">🏠</tspan> Dynamic place listing &amp; detailed room views</text>
+    <text x="0" y="48"><tspan fill="#f59e0b">🔐</tspan> Passport.js user authentication sessions</text>
+    <text x="0" y="72"><tspan fill="#f59e0b">☁️</tspan> Cloudinary media delivery &amp; MongoDB storage</text>
+  </g>
+
+  <!-- Footer Link Tag -->
+  <g transform="translate(25, 260)">
+    <rect width="400" height="34" rx="8" fill="#292524" stroke="#78350f" stroke-width="1"/>
+    <circle cx="18" cy="17" r="4" fill="#f59e0b">
+      <animate attributeName="r" values="3;5;3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="32" y="21" fill="#fef3c7" font-family="'Courier New', monospace" font-size="10.5" font-weight="bold">LIVE MAP SERVICE</text>
+    <text x="385" y="21" fill="#fbbf24" font-family="'Courier New', monospace" font-size="9.5" text-anchor="end">wanderlust-project-ftx2.onrender.com</text>
+  </g>
+</svg>
