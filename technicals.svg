@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dsa-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <filter id="gold-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base Plate -->
+  <rect width="450" height="320" rx="16" fill="url(#dsa-bg)" stroke="#eab308" stroke-width="1.2" stroke-opacity="0.4"/>
+
+  <!-- Prominent 200+ Metric Badge -->
+  <g transform="translate(325, 30)">
+    <rect width="100" height="54" rx="8" fill="#27272a" stroke="#eab308" stroke-width="1"/>
+    <text x="50" y="28" fill="#facc15" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="900" text-anchor="middle" filter="url(#gold-glow)">200+</text>
+    <text x="50" y="44" fill="#a1a1aa" font-family="'Courier New', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">LEETCODE</text>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="25" y="45" fill="#facc15" font-family="'Courier New', monospace" font-size="11" font-weight="bold" letter-spacing="1.5">ALGORITHMIC MASTERY</text>
+  <text x="25" y="75" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="800">🧠 DSA with Java</text>
+
+  <!-- Progress Bar Simulation -->
+  <g transform="translate(25, 96)">
+    <rect width="280" height="6" rx="3" fill="#27272a"/>
+    <rect width="210" height="6" rx="3" fill="#facc15">
+      <animate attributeName="width" values="120;250;120" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Core Competency Chips -->
+  <g transform="translate(25, 122)" font-family="'Courier New', monospace" font-size="10" fill="#f4f4f5">
+    <g transform="translate(0, 0)">
+      <rect width="125" height="22" rx="4" fill="#27272a" stroke="#3f3f46" stroke-width="0.8"/>
+      <text x="62" y="14.5" text-anchor="middle">Trees &amp; Binary BST</text>
+    </g>
+    <g transform="translate(133, 0)">
+      <rect width="125" height="22" rx="4" fill="#27272a" stroke="#3f3f46" stroke-width="0.8"/>
+      <text x="62" y="14.5" text-anchor="middle">Graphs (BFS/DFS)</text>
+    </g>
+    <g transform="translate(266, 0)">
+      <rect width="134" height="22" rx="4" fill="#27272a" stroke="#3f3f46" stroke-width="0.8"/>
+      <text x="67" y="14.5" text-anchor="middle">Dynamic Programming</text>
+    </g>
+
+    <g transform="translate(0, 28)">
+      <rect width="125" height="22" rx="4" fill="#27272a" stroke="#3f3f46" stroke-width="0.8"/>
+      <text x="62" y="14.5" text-anchor="middle">Stacks &amp; Queues</text>
+    </g>
+    <g transform="translate(133, 28)">
+      <rect width="125" height="22" rx="4" fill="#27272a" stroke="#3f3f46" stroke-width="0.8"/>
+      <text x="62" y="14.5" text-anchor="middle">Heaps &amp; Priority Q</text>
+    </g>
+    <g transform="translate(266, 28)">
+      <rect width="134" height="22" rx="4" fill="#27272a" stroke="#3f3f46" stroke-width="0.8"/>
+      <text x="67" y="14.5" text-anchor="middle">Hashing &amp; Pointers</text>
+    </g>
+  </g>
+
+  <!-- Key Focus Note -->
+  <g transform="translate(25, 200)" font-family="'Courier New', monospace" font-size="11" fill="#a1a1aa">
+    <text x="0" y="0"><tspan fill="#facc15">▸</tspan> Focus: Time/Space complexity optimization</text>
+    <text x="0" y="20"><tspan fill="#facc15">▸</tspan> Rigorous problem-solving patterns in pure Java</text>
+  </g>
+
+  <!-- Footer Link Tag -->
+  <g transform="translate(25, 260)">
+    <rect width="400" height="34" rx="8" fill="#27272a" stroke="#eab308" stroke-width="0.8"/>
+    <text x="18" y="21" fill="#facc15" font-family="'Courier New', monospace" font-size="10.5" font-weight="bold">LEETCODE PROFILE</text>
+    <text x="385" y="21" fill="#ffffff" font-family="'Courier New', monospace" font-size="10" text-anchor="end">leetcode.com/u/ChaurasiyaAman/</text>
+  </g>
+</svg>
