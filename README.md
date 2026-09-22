@@ -1,193 +1,163 @@
-<!-- header svg -->
 <p align="center">
-  <img
-    src="./header.svg"
-    width="100%"
-    alt="Aman Chaurasiya - Software Engineer"
-  />
+  <img src="./header.svg" width="100%" alt="Aman Chaurasiya - Software Engineer" />
 </p>
 
-<!-- About me-->
 <p align="center">
-  <img
-    src="./aboutMe.svg"
-    width="100%"
-    alt="About Aman Chaurasiya"
-  />
+  <img src="./aboutMe.svg" width="100%" alt="About Aman Chaurasiya" />
 </p>
+
 <p align="center">
-  <a href="https://linkedin.com/in/er-aman-chaurasiya">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
+  <a href="https://www.linkedin.com/in/er-aman-chaurasiya/">
+    <img src="https://img.shields.io/badge/LinkedIn-Aman%20Chaurasiya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:amanchaurasiya2207@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
   <a href="https://leetcode.com/u/ChaurasiyaAman/">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+    <img src="https://img.shields.io/badge/LeetCode-ChaurasiyaAman-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" />
   </a>
 </p>
 
 ---
 
 # 🛠️ Tech Stack
-<p align="center">
-  <img
-    src="./tech-sphere.svg"
-    width="100%"
-    alt="Aman Chaurasiya Tech Sphere"
-  />
-</p>
 
 ### Languages
 
-![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![C++](https://img.shields.io/badge/C%2B%2B-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![SQL](https://img.shields.io/badge/SQL-%23025E8C.svg?style=for-the-badge&logo=database&logoColor=white)
+<p>
+  <img src="https://skillicons.dev/icons?i=java,js,cpp,python,mysql" />
+</p>
 
 ### Frontend
 
-![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Redux](https://img.shields.io/badge/Redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+<p>
+  <img src="https://skillicons.dev/icons?i=react,redux,html,css,tailwind" />
+</p>
 
 ### Backend
 
-![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![Flask](https://img.shields.io/badge/Flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-![EJS](https://img.shields.io/badge/EJS-%23B4CA65.svg?style=for-the-badge&logo=ejs&logoColor=black)
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi" />
+</p>
 
-### Database & Tools
+### Database & Cloud
 
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+<p>
+  <img src="https://skillicons.dev/icons?i=mongodb,mysql,cloudflare" />
+</p>
 
-### Backend Technologies
+### APIs & Authentication
 
-![REST API](https://img.shields.io/badge/REST_APIs-02569B?style=for-the-badge)
-![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
-![OAuth2](https://img.shields.io/badge/OAuth_2.0-3C3C3D?style=for-the-badge)
+<p>
+  <img src="https://img.shields.io/badge/REST%20APIs-0F172A?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
+  <img src="https://img.shields.io/badge/OAuth%202.0-4285F4?style=for-the-badge&logo=google&logoColor=white" />
+</p>
+
+### Tools
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,postman,vscode" />
+</p>
 
 ---
 
-# 🚀 Projects
+# 🚀 Featured Projects
 
-<p align="center">
-  <a href="https://e-commerce-ekart.onrender.com">
-    <img
-      src="./my-projects/ekart.svg"
-      alt="eKart Store"
-      width="100%"
-    />
+<table>
+<tr>
+<td width="55%" valign="middle">
+
+### 🛒 eKart - Full-Stack E-Commerce
+
+A full-stack MERN e-commerce platform with JWT-based authentication, email verification, product management, Cloudinary integration, Redux Toolkit state management, and REST APIs.
+
+**Tech:** React · Node.js · Express · MongoDB · JWT · Redux Toolkit · Cloudinary
+
+</td>
+
+<td width="45%" align="center">
+  <a href="https://e-commerce-ekart.onrender.com" target="_blank">
+    <img src="./my-projects/ekart.svg" width="100%" alt="eKart Store" />
   </a>
+ <p>
+  <b>eKart</b> - 
+  <a href="https://e-commerce-ekart.onrender.com">Live Demo</a>
 </p>
-<p align="center">
-  <a href="https://wanderlust-project-ftx2.onrender.com/">
-    <img
-      src="./my-projects/travelnest.svg"
-      alt="travelnest"
-      width="100%"
-    />
+</td>
+</tr>
+
+<tr>
+<td width="45%" align="center">
+  <a href="https://wanderlust-project-ftx2.onrender.com/" target="_blank">
+    <img src="./my-projects/travelnest.svg" width="100%" alt="TravelNest" />
   </a>
+ <p>
+  <b>TravelNest</b> - 
+  <a href="https://wanderlust-project-ftx2.onrender.com/">Live Demo</a>
 </p>
-<p align="center">
-  <a href="https://chaurasiya-aman.github.io/weather-app/">
-    <img
-      src="./my-projects/weatherApp.svg"
-      alt="weather app"
-      width="100%"
-    />
+</td>
+
+<td width="55%" valign="middle">
+
+### 🏡 TravelNest - Travel Listing Platform
+
+A full-stack travel listing platform built with Node.js and Express, featuring user authentication, persistent sessions, image uploads, Cloudinary storage, interactive maps, and MongoDB integration.
+
+**Tech:** Node.js · Express · MongoDB · EJS · Passport.js · Cloudinary · Leaflet
+
+</td>
+</tr>
+
+<tr>
+<td width="55%" valign="middle">
+
+### 🌦️ Weather App
+
+A responsive weather application that retrieves real-time weather information through an API and presents the data through a clean, user-friendly interface.
+
+**Tech:** HTML · CSS · JavaScript · Weather API
+
+</td>
+
+<td width="45%" align="center">
+  <a href="https://chaurasiya-aman.github.io/weather-app/" target="_blank">
+    <img src="./my-projects/weatherApp.svg" width="100%" alt="Weather App" />
   </a>
+  <p>
+  <b>Weather App</b> - 
+  <a href="https://chaurasiya-aman.github.io/weather-app/">Live Demo</a>
 </p>
-## 🛒 eKart — MERN E-Commerce Platform
-
-A full-stack e-commerce project built with the MERN stack.
-
-**Tech:** React.js • Node.js • Express.js • MongoDB • Redux Toolkit • JWT • Cloudinary
-
-- 🔐 JWT-based authentication with access/refresh cookie handling
-- 📧 Email verification and re-verification
-- 🖼️ Cloudinary integration for image management
-- 🔌 REST API-based backend
-- 🤖 AI assistant for product-related interactions
-- 🗄️ MongoDB Atlas database
-- 🚀 Deployed using Render
-
-🔗 **Live:** https://e-commerce-ekart.onrender.com
+</td>
+</tr>
+</table>
 
 ---
 
-## 🌍 TravelNest
-
-A full-stack travel/listing application built using Node.js and Express.js.
-
-**Tech:** Node.js • Express.js • MongoDB • EJS • Passport.js • Cloudinary • Leaflet
-
-- 🔐 User authentication
-- 🏠 Listing-based functionality
-- 🗺️ Interactive maps
-- 🖼️ Cloudinary image handling
-- 🗄️ MongoDB-based data storage
-
-🔗 **Live:** https://wanderlust-project-ftx2.onrender.com
-
-## 🌦️ Weather Application
-
-A web application that retrieves and displays weather information using an external weather API.
-
-**Tech:** HTML • CSS • JavaScript • REST API
-
----
-
-# 🧠 Technicals
+# 🧠 Data Structures & Algorithms
 
 <p align="center">
-  <a href="https://chaurasiya-aman.github.io/weather-app/">
-    <img
-      src="./technicals.svg"
-      alt="DSA"
-      width="100%"
-    />
+  <a href="https://leetcode.com/u/ChaurasiyaAman/">
+    <img src="./technicals.svg" width="70%" alt="Data Structures and Algorithms" />
   </a>
 </p>
-I'm actively practicing DSA using **Java**.
 
-Currently working with:
-
-- Arrays & Strings
-- Linked Lists
-- Stacks & Queues
-- Hashing
-- Trees
-- Graphs
-- BFS & DFS
-- Heaps & Priority Queues
-- Recursion
-- Dynamic Programming
-- Graph Algorithms
-
-💻 **200+ problems solved on LeetCode**
-
-🔗 https://leetcode.com/u/ChaurasiyaAman/
+<p align="center">
+  <b>200+ LeetCode problems solved in Java</b><br/>
+  Graphs · BFS · DFS · Topological Sort · Shortest Paths · Dynamic Programming · Binary Search · Trees
+</p>
 
 ---
 
 # 📚 Computer Science Fundamentals
 
-- Object-Oriented Programming
-- Database Management Systems
-- Computer Networks
-- Data Structures & Algorithms
-- Software Engineering Fundamentals
-- MVC Architecture
+<p align="center">
+  <img src="https://img.shields.io/badge/DSA-FF6B6B?style=for-the-badge&logo=leetcode&logoColor=white" />
+  <img src="https://img.shields.io/badge/OOP-845EC2?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/DBMS-0081CF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Operating%20Systems-00C9A7?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Computer%20Networks-FFC75F?style=for-the-badge" />
+</p>
 
 ---
 
@@ -204,7 +174,7 @@ Currently working with:
 
 ---
 
-# 🐍 My Contributions
+# 🐍 Contributions
 
 <p align="center">
   <picture>
@@ -225,26 +195,10 @@ Currently working with:
 
 ---
 
-# 🏆 GitHub Trophies
+# 💡 Developer Quote
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=chaurasiya-aman&theme=tokyonight&no-frame=false&no-bg=true&margin-w=4" />
-</p>
-
----
-
-# 💬 Random Dev Quote
-
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
-</p>
-
----
-
-# 🔝 Top Contributed Repository
-
-<p align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=chaurasiya-aman&limit=5&theme=dark&combine_all_yearly_contributions=true" />
+  <i>"First, solve the problem. Then, write the code."</i>
 </p>
 
 ---
@@ -252,21 +206,10 @@ Currently working with:
 # 🤝 Connect With Me
 
 <p align="center">
-  <a href="https://linkedin.com/in/er-aman-chaurasiya">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
+   <a href="https://www.linkedin.com/in/er-aman-chaurasiya/">
+    <img src="https://img.shields.io/badge/LinkedIn-Aman%20Chaurasiya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-
   <a href="mailto:amanchaurasiya2207@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-
-  <a href="https://leetcode.com/u/ChaurasiyaAman/">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
-  </a>
-</p>
-
----
-
-<p align="center">
-  <b>💻 Keep Learning • Keep Building • Keep Solving 🚀</b>
 </p>
