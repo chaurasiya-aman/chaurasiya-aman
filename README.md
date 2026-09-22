@@ -98,6 +98,15 @@
     />
   </a>
 </p>
+<p align="center">
+  <a href="https://chaurasiya-aman.github.io/weather-app/">
+    <img
+      src="./my-projects/weatherApp.svg"
+      alt="weather app"
+      width="100%"
+    />
+  </a>
+</p>
 ## 🛒 eKart — MERN E-Commerce Platform
 
 A full-stack e-commerce project built with the MERN stack.
