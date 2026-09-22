@@ -88,6 +88,15 @@
     />
   </a>
 </p>
+<p align="center">
+  <a href="https://wanderlust-project-ftx2.onrender.com/">
+    <img
+      src="./my-projects/travelnest.svg"
+      alt="travelnest"
+      width="900"
+    />
+  </a>
+</p>
 ## 🛒 eKart — MERN E-Commerce Platform
 
 A full-stack e-commerce project built with the MERN stack.
