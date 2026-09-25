@@ -1,5 +1,14 @@
 <p align="center">
-  <img src="./header.svg" width="100%" alt="Aman Chaurasiya - Software Engineer" />
+  <img
+    src="./header.svg"
+    width="100%"
+    height="600"
+    alt="Aman Chaurasiya - Software Engineer"
+  />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=30&duration=2200&pause=700&color=7aa2f7&center=true&vCenter=true&width=650&height=45&lines=Software+Development;Scalable+Systems;Problem+Solving;Web+Development;Building+practical+software+that+solves+real+problems+%F0%9F%9A%80" alt="Typing Animation" />
 </p>
 
 # ⚡ Who Am I ?
