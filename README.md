@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="./aboutMe.java" width="100%" alt="About Aman Chaurasiya" />
+  <img src="./aboutMe.js" width="100%" alt="About Aman Chaurasiya" />
 </p>
 
 <p align="center">
