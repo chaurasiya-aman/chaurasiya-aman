@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=30&duration=2200&pause=700&color=7aa2f7&center=true&vCenter=true&width=650&height=45&lines=Software+Development;Scalable+Systems;Problem+Solving;Web+Development;Building+practical+software+that+solves+real+problems+%F0%9F%9A%80" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=23&duration=2200&pause=700&color=7aa2f7&center=true&vCenter=true&width=800&height=55&lines=Software+Developer+%2B+Problem+Solver;Java+Developer+%2B+Full+Stack+Developer;Backend+Developer+%2B+Web+Developer;Software+Developer+%2B+System+Builder;Full+Stack+Developer+%2B+Problem+Solver;Building+Practical+Software+%2B+Solving+Real+Problems+%F0%9F%9A%80" alt="Typing Animation" />
 </p>
 
 # ⚡ Who Am I ?
