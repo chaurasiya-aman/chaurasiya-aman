@@ -20,6 +20,14 @@
 
 ---
 
+# 🛠️ Tech Sphere
+<p align="center">
+  <img src="./tech-sphere.svg" width="100%" alt="Aman Chaurasiya - Software Engineer" />
+</p>
+
+
+---
+
 # 🛠️ Tech Stack
 
 ### Languages
