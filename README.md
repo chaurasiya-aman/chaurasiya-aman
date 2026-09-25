@@ -2,9 +2,33 @@
   <img src="./header.svg" width="100%" alt="Aman Chaurasiya - Software Engineer" />
 </p>
 
-<p align="center">
-  <img src="./aboutMe.js" width="100%" alt="About Aman Chaurasiya" />
-</p>
+# ⚡ Who Am I ?
+```dart
+class AmanChaurasiya extends Developer {
+
+    final String role = "Aspiring Software Engineer";
+    final String education = "B.Tech CSE • Class of 2027";
+    final String location = "India 🇮🇳";
+
+    final String[] craft = {
+        "Problem solving with Java & DSA",
+        "Full-stack development",
+        "Building practical software"
+    };
+
+    String currentMission() {
+        return "Building practical software, one commit at a time 🚀";
+    }
+
+    String nextGoal() {
+        return "Keep learning, building, and improving 🎯";
+    }
+
+    String superpower() {
+        return "Turning complex problems into simple solutions ✨";
+    }
+}
+```
 
 <p align="center">
   <a href="https://www.linkedin.com/in/er-aman-chaurasiya/">
@@ -20,7 +44,7 @@
 
 ---
 
-# 🛠️ Tech Sphere
+# 🛠️ Tech Universe
 <p align="center">
   <img src="./tech-sphere.svg" width="100%" alt="Aman Chaurasiya - Software Engineer" />
 </p>
