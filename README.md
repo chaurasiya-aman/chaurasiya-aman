@@ -6,7 +6,7 @@
 ```dart
 class AmanChaurasiya extends Developer {
 
-    final String role = "Software Engineer";
+    final String role = "Software Developer";
     final String education = "B.Tech CSE • Class of 2027";
     final String location = "India 🇮🇳";
 
