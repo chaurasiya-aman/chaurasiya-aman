@@ -62,7 +62,7 @@ public class AmanChaurasiya {
 ### Languages
 
 <p>
-  <img src="https://skillicons.dev/icons?i=java,js,cpp" />
+  <img src="https://skillicons.dev/icons?i=java,js,cpp,c,py" />
 </p>
 
 ### Frontend
