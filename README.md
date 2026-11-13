@@ -1,40 +1,33 @@
-<p align="center">
-  <img
-    src="./header.svg"
-    width="100%"
-    height="600"
-    alt="Aman Chaurasiya - Software Engineer"
-  />
+ <p align="center">
+  <img src="./header.svg" width="100%" height="600" alt="Aman Chaurasiya - Software Engineer" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=23&duration=2200&pause=700&color=7aa2f7&center=true&vCenter=true&width=800&height=55&lines=Software+Developer+%2B+Problem+Solver;Java+Developer+%2B+Full+Stack+Developer;Backend+Developer+%2B+Web+Developer;Software+Developer+%2B+System+Builder;Full+Stack+Developer+%2B+Problem+Solver;Building+Practical+Software+%2B+Solving+Real+Problems+%F0%9F%9A%80" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=23&duration=2200&pause=700&color=7aa2f7&center=true&vCenter=true&width=800&height=55&lines=Software+Developer+%2B+Problem+Solver;Java+Developer+%2B+Full+Stack+Developer;Backend+Developer+%2B+Web+Developer;Building+Practical+Software+%2B+Solving+Real+Problems+%F0%9F%9A%80" alt="Typing Animation" />
 </p>
 
-# ⚡ Who Am I ?
-```dart
-class AmanChaurasiya extends Developer {
+# ⚡ Who Am I?
 
-    final String role = "Software Developer";
-    final String education = "B.Tech CSE • Class of 2027";
-    final String location = "India 🇮🇳";
+```java
+public class AmanChaurasiya {
 
-    final String[] craft = {
-        "Problem solving with Java & DSA",
-        "Full-stack development",
-        "Building practical software"
+    private final String role = "Software Developer";
+    private final String education = "B.Tech CSE | Class of 2027";
+    private final String location = "India";
+
+    private final String[] interests = {
+        "Problem Solving with Java and DSA",
+        "Full-Stack Development",
+        "Backend Engineering",
+        "Building Practical Software"
     };
 
-    String currentMission() {
-        return "Building practical software, one commit at a time 🚀";
+    public String currentMission() {
+        return "Building practical software, one commit at a time.";
     }
 
-    String nextGoal() {
-        return "Keep learning, building, and improving 🎯";
-    }
-
-    String superpower() {
-        return "Turning complex problems into simple solutions ✨";
+    public String nextGoal() {
+        return "Keep learning, building, and improving.";
     }
 }
 ```
@@ -49,24 +42,27 @@ class AmanChaurasiya extends Developer {
   <a href="https://leetcode.com/u/ChaurasiyaAman/">
     <img src="https://img.shields.io/badge/LeetCode-ChaurasiyaAman-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" />
   </a>
+  <a href="https://portfolio-website-omega-dusky-43.vercel.app">
+    <img src="https://img.shields.io/badge/Portfolio-Visit-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" />
+  </a>
 </p>
 
 ---
 
 # 🛠️ Tech Universe
-<p align="center">
-  <img src="./tech-sphere.svg" width="100%" alt="Aman Chaurasiya - Software Engineer" />
-</p>
 
+<p align="center">
+  <img src="./tech-sphere.svg" width="100%" alt="Aman Chaurasiya - Technology Stack" />
+</p>
 
 ---
 
-# 🛠️ Tech Stack
+# 💻 Tech Stack
 
 ### Languages
 
 <p>
-  <img src="https://skillicons.dev/icons?i=java,js,cpp,python,mysql" />
+  <img src="https://skillicons.dev/icons?i=java,js,cpp" />
 </p>
 
 ### Frontend
@@ -78,13 +74,13 @@ class AmanChaurasiya extends Developer {
 ### Backend
 
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express" />
 </p>
 
-### Database & Cloud
+### Database
 
 <p>
-  <img src="https://skillicons.dev/icons?i=mongodb,mysql,cloudflare" />
+  <img src="https://skillicons.dev/icons?i=mongodb,mysql" />
 </p>
 
 ### APIs & Authentication
@@ -111,23 +107,18 @@ class AmanChaurasiya extends Developer {
 
 ### 🛒 eKart - Full-Stack E-Commerce
 
-A full-stack MERN e-commerce platform with JWT-based authentication, email verification, product management, Cloudinary integration, Redux Toolkit state management, and REST APIs.
+A full-stack MERN e-commerce platform featuring JWT-based authentication, email verification, product management, Cloudinary integration, Redux Toolkit state management, and REST APIs.
 
 **Tech:** React · Node.js · Express · MongoDB · JWT · Redux Toolkit · Cloudinary
 
-<br>
+**Live Demo:** <a href="https://e-commerce-ekart.onrender.com">eKart</a>
 
-<b>Live Demo:</b> <a href="https://e-commerce-ekart.onrender.com">eKart</a>
+**Source Code:** <a href="https://github.com/chaurasiya-aman/eKart-frontend">Frontend</a> · <a href="https://github.com/chaurasiya-aman/eKart-backend">Backend</a>
 
 </td>
-
 <td width="50%" align="center" valign="middle">
   <a href="https://e-commerce-ekart.onrender.com">
-    <img
-      src="./my-projects/ekart.svg"
-      width="90%"
-      alt="eKart Store"
-    />
+    <img src="./my-projects/ekart.svg" width="90%" alt="eKart Store" />
   </a>
 </td>
 </tr>
@@ -135,14 +126,9 @@ A full-stack MERN e-commerce platform with JWT-based authentication, email verif
 <tr>
 <td width="50%" align="center" valign="middle">
   <a href="https://wanderlust-project-ftx2.onrender.com/">
-    <img
-      src="./my-projects/travelnest.svg"
-      width="90%"
-      alt="TravelNest"
-    />
+    <img src="./my-projects/travelnest.svg" width="90%" alt="TravelNest" />
   </a>
 </td>
-
 <td width="50%" valign="middle">
 
 ### 🏡 TravelNest - Travel Listing Platform
@@ -151,9 +137,9 @@ A full-stack travel listing platform built with Node.js and Express, featuring u
 
 **Tech:** Node.js · Express · MongoDB · EJS · Passport.js · Cloudinary · Leaflet
 
-<br>
+**Live Demo:** <a href="https://wanderlust-project-ftx2.onrender.com/">TravelNest</a>
 
-<b>Live Demo:</b> <a href="https://wanderlust-project-ftx2.onrender.com/">TravelNest</a>
+**Source Code:** <a href="https://github.com/chaurasiya-aman/WanderLust-Project">GitHub</a>
 
 </td>
 </tr>
@@ -163,24 +149,38 @@ A full-stack travel listing platform built with Node.js and Express, featuring u
 
 ### 🌦️ Weather App
 
-A responsive weather application that retrieves real-time weather information through an API and presents the data through a clean, user-friendly interface.
+A responsive weather application that retrieves weather information through an API and presents it through a clean, user-friendly interface.
 
 **Tech:** HTML · CSS · JavaScript · Weather API
 
-<br>
+**Live Demo:** <a href="https://chaurasiya-aman.github.io/weather-app/">Weather App</a>
 
-<b>Live Demo:</b> <a href="https://chaurasiya-aman.github.io/weather-app/">Weather App</a>
+**Source Code:** <a href="https://github.com/chaurasiya-aman/weather-app">GitHub</a>
 
 </td>
-
 <td width="50%" align="center" valign="middle">
   <a href="https://chaurasiya-aman.github.io/weather-app/">
-    <img
-      src="./my-projects/weatherApp.svg"
-      width="90%"
-      alt="Weather App"
-    />
+    <img src="./my-projects/weatherApp.svg" width="90%" alt="Weather App" />
   </a>
+</td>
+</tr>
+
+<tr>
+<td width="50%" align="center" valign="middle">
+  <a href="https://stockflow-0jd0.onrender.com/login">
+    <img src="./my-projects/stockflow.svg" width="90%" alt="StockFlow Inventory Management System" />
+  </a>
+</td>
+<td width="50%" valign="middle">
+
+### 📦 StockFlow - Inventory Management System
+
+An inventory management project designed to provide an interface for managing and tracking inventory.
+
+  **Live Demo:** <a href="https://stockflow-0jd0.onrender.com/login">StockFlow</a>
+  
+  **Source Code:** <a href="https://github.com/chaurasiya-aman/StockFlow">GitHub</a>
+
 </td>
 </tr>
 </table>
@@ -217,12 +217,12 @@ A responsive weather application that retrieves real-time weather information th
 # 📊 GitHub Statistics
 
 <p align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=chaurasiya-aman&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false" height="170"/>
-  <img src="https://streak-stats.demolab.com/?user=chaurasiya-aman&theme=tokyonight&hide_border=false" height="170"/>
+  <img src="https://github-readme-stats.shion.dev/api?username=chaurasiya-aman&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false" height="170" />
+  <img src="https://streak-stats.demolab.com/?user=chaurasiya-aman&theme=tokyonight&hide_border=false" height="170" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=chaurasiya-aman&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false&layout=compact" height="170"/>
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=chaurasiya-aman&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false&layout=compact" height="170" />
 </p>
 
 ---
@@ -259,10 +259,13 @@ A responsive weather application that retrieves real-time weather information th
 # 🤝 Connect With Me
 
 <p align="center">
-   <a href="https://www.linkedin.com/in/er-aman-chaurasiya/">
+  <a href="https://www.linkedin.com/in/er-aman-chaurasiya/">
     <img src="https://img.shields.io/badge/LinkedIn-Aman%20Chaurasiya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:amanchaurasiya2207@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://github.com/chaurasiya-aman">
+    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
